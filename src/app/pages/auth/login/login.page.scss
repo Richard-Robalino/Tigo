@@ -1,0 +1,41 @@
+// Login: apariencia minimalista y vertical, distinto a original
+
+$accent: #0f172a;
+$muted: #94a3b8;
+
+.custom-bg { --background: linear-gradient(180deg,#fbfdff,#f1f5f9); }
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 28px 14px;
+}
+
+.header-section { text-align: center; margin-bottom: 28px; }
+
+.logo-placeholder { width: 72px; height: 72px; margin: 0 auto 14px; border-radius: 16px; background: linear-gradient(135deg,#c7d2fe,#a78bfa); display:flex;align-items:center;justify-content:center; }
+
+.page-title { font-size: 28px; font-weight: 800; color: $accent; margin: 0 0 6px; }
+.page-subtitle { font-size: 14px; color: $muted; margin: 0; }
+
+.input-group { margin-bottom: 16px; }
+.input-group label { display:block; font-weight:700; color:$accent; margin-bottom:8px; font-size:13px; }
+
+ion-input {
+  --background: #fff;
+  --border-radius: 10px;
+  --padding-start: 14px;
+  min-height: 52px;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+
+.error-msg { color: #ef4444; font-size:12px; margin-top:6px; }
+
+.btn-login { --border-radius:12px; --background: linear-gradient(90deg,#0b1220,#374151); --color: #fff; height:52px; font-weight:800; }
+
+.footer-links { text-align:center; margin-top:30px; font-size:13px; color:$muted; }
+.footer-links a { color: #374151; font-weight:700; text-decoration:none; }
+
+@media (min-width:768px){ .login-container{ max-width:420px; margin:0 auto; } }

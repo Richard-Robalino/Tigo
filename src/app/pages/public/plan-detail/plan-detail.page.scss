@@ -1,0 +1,20 @@
+// Plan detail: aspecto compacto y moderno
+
+$muted: #64748b;
+
+ion-content { --background: linear-gradient(180deg,#ffffff,#f7fbff); }
+
+.plan-hero { display:flex; flex-direction:column; align-items:center; gap:10px; padding:18px; }
+.plan-image{ width:100%; max-width:260px; height:160px; object-fit:cover; border-radius:12px; box-shadow:0 10px 30px rgba(2,6,23,0.06); }
+.plan-hero h1{ font-size:24px; font-weight:900; color:#071029; margin:0; }
+.price-tag{ font-size:28px; font-weight:800; color:#0b1220; }
+
+ion-list{ padding:8px 12px; }
+ion-item{ --background:#fff; --border-radius:10px; margin-bottom:10px; border:1px solid rgba(7,10,22,0.04); }
+ion-item ion-label{ display:flex; justify-content:space-between; align-items:center; color:#0b1220; }
+ion-item ion-label b{ color:#0b84a5; }
+
+.description-section{ padding:14px 18px; color:$muted; font-size:14px; text-align:left; }
+
+ion-footer{ background:transparent; padding:10px 12px; }
+.btn-action{ --border-radius:12px; height:48px; font-weight:800; --background: linear-gradient(90deg,#0b84a5,#066d84); --color:#fff; }

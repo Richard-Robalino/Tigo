@@ -1,0 +1,47 @@
+.mensaje-propio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 8px 0;
+
+  .burbuja {
+    background: linear-gradient(135deg, #ff7a59 0%, #ffb86b 100%);
+    color: #111;
+    padding: 12px 16px;
+    border-radius: 18px 18px 6px 18px;
+    max-width: 78%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    word-break: break-word;
+  }
+}
+
+.mensaje-cliente {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 8px 0;
+
+  .burbuja {
+    background: #ffffff;
+    border: 1px solid rgba(16,24,40,0.06);
+    color: #0f172a;
+    padding: 12px 16px;
+    border-radius: 18px 18px 18px 6px;
+    max-width: 78%;
+    box-shadow: 0 4px 12px rgba(16,24,40,0.03);
+    word-break: break-word;
+  }
+}
+
+small {
+  font-size: 0.72rem;
+  color: rgba(15,23,42,0.5);
+  margin-top: 4px;
+}
+
+.typing-indicator {
+  font-style: normal;
+  color: rgba(15,23,42,0.5);
+  font-size: 0.85rem;
+  margin-left: 8px;
+}

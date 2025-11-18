@@ -1,0 +1,31 @@
+.request-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg,#ffffff,#fbfcff);
+  border: 1px solid rgba(11,18,32,0.04);
+  box-shadow: 0 8px 30px rgba(4,6,23,0.04);
+  overflow: hidden;
+
+  ion-card-content { padding: 14px; }
+}
+
+.header-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  .client-name { font-size: 1.05rem; font-weight: 800; color: #0b1220; margin: 0; }
+
+  ion-badge { padding: 6px 12px; font-weight: 700; border-radius: 999px; }
+}
+
+.plan-info, .date-info { font-size: 0.9em; color: #6b7280; margin-bottom: 6px; }
+
+.action-buttons { display: flex; gap: 8px; margin-top: 14px; }
+
+.action-buttons ion-button {
+  flex: 1; --border-radius: 10px; height: 42px; font-weight: 700; text-transform: none;
+}
+
+.action-buttons ion-button.icon-only { flex: 0 0 46px; width: 46px; height: 46px; padding: 0; }

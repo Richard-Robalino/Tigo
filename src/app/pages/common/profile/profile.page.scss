@@ -1,0 +1,22 @@
+.profile-card {
+  background: linear-gradient(180deg,#ffffff,#f8fbff);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 18px;
+  box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+  text-align: center;
+
+  .profile-avatar {
+    width: 110px; height:110px; margin:0 auto 14px; border-radius:18px; overflow:hidden; border:4px solid rgba(99,102,241,0.12);
+    img{ width:100%; height:100%; object-fit:cover; }
+  }
+
+  .profile-name{ font-size:1.4rem; font-weight:800; color:#071029; margin-bottom:6px; }
+  .profile-name span{ display:block; font-size:0.75rem; color:#64748b; font-weight:500; }
+
+  .profile-email{ font-size:0.9rem; color:#64748b; margin-bottom:14px; }
+
+  .profile-details-list ion-item{ --background: transparent; margin-bottom:10px; border-radius:8px; }
+
+  ion-button{ margin-top:10px; --border-radius:12px; font-weight:700; }
+}

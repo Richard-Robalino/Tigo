@@ -1,0 +1,12 @@
+.custom-toolbar{ --background:transparent; color:#071029; }
+.main-title{ color:#071029; font-weight:900; }
+.list-container{ padding-top:8px; display:flex; flex-direction:column; gap:12px; }
+.custom-card{ background:linear-gradient(180deg,#fff,#fbfdff); margin-bottom:12px; border-radius:12px; padding:12px; box-shadow:0 12px 30px rgba(2,6,23,0.05); }
+.card-top-row{ display:flex; justify-content:space-between; align-items:flex-start; }
+.plan-name{ font-size:1.05rem; font-weight:800; color:#071029; }
+.plan-date{ font-size:0.82rem; color:#64748b; margin:6px 0 12px 0; }
+.status-badge{ padding:6px 12px; border-radius:999px; font-size:0.78rem; font-weight:800; }
+.status-pendiente{ background:#fbbf24; color:#3b2f00; }
+.status-aprobado{ background:#10b981; color:#ffffff; }
+.status-rechazado{ background:#ef4444; color:#ffffff; }
+.chat-btn{ --border-radius:10px; --background:linear-gradient(90deg,#0b84a5,#066d84); color:#fff; margin-top:10px; }

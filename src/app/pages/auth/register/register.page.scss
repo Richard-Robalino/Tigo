@@ -1,0 +1,21 @@
+// Register: estilo alternativo, más aire y tarjetas suaves
+
+$accent: #0b84a5;
+$muted: #64748b;
+
+.custom-bg { --background: linear-gradient(180deg,#fff,#f8fafc); }
+
+.header-nav { margin: 12px 0 18px 0; }
+
+.back-button { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:12px; background: rgba(11,132,165,0.08); color:#073b47; font-weight:600; }
+
+.page-title { font-size:26px; font-weight:800; margin-bottom:18px; color:#072a32; }
+
+.input-group { margin-bottom:14px; }
+.input-group label { display:block; font-weight:700; color:#072a32; margin-bottom:6px; }
+
+ion-input { --background:#fff; --border-radius:10px; --padding-start:12px; min-height:48px; border:1px solid rgba(7,42,50,0.06); }
+
+.btn-register { --border-radius:12px; --background: linear-gradient(90deg,#0b84a5,#066d84); --color:#fff; height:50px; font-weight:800; }
+
+@media (min-width:900px){ .register-container{ max-width:760px; display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; } }

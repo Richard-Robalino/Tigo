@@ -1,0 +1,21 @@
+// Landing rediseñada: fondo claro con gradiente suave y CTA destacado
+
+$bg: linear-gradient(180deg,#f8fafc,#ffffff);
+$accent: #0b84a5;
+
+.landing-content { --background: $bg; }
+
+.main-container { display:flex; flex-direction:column; justify-content:space-between; height:100%; padding:34px 22px; color:#072a32; }
+
+.brand-section{ display:flex; flex-direction:column; align-items:center; gap:18px; }
+.logo-container { background: linear-gradient(90deg,#e6f6f9,#dff7fb); border-radius:12px; padding:18px; box-shadow:0 10px 30px rgba(11,132,165,0.06); }
+.app-logo{ width:110px; display:block; }
+.app-title{ font-size:30px; font-weight:900; margin:0; color:#072a32; }
+.app-slogan{ font-size:15px; color:#4b5563; margin:0; }
+
+.actions-section{ width:100%; max-width:460px; margin:0 auto; padding-bottom:18px; display:flex; flex-direction:column; }
+.actions-section ion-button{ --border-radius:12px; height:52px; font-weight:800; margin-bottom:12px; }
+.actions-section ion-button.btn-primary{ --background: linear-gradient(90deg,#0b84a5,#066d84); --color:#fff; }
+.actions-section ion-button.btn-secondary{ --background: transparent; --border-color:#066d84; --border-width:2px; --color:#066d84; }
+
+.version-text{ text-align:center; font-size:12px; color:#94a3b8; margin-top:6px; }
