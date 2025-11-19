@@ -1,6 +1,6 @@
 
 
-# 📱 Tigo Conecta (Examen TIGO) – App móvil con Ionic + Supabase
+# 📱 Tigo Conecta  – App móvil con Ionic + Supabase
 
 Aplicación móvil híbrida construida con **Ionic + Angular + Capacitor** que simula
 el flujo de contratación de planes móviles TIGO:
