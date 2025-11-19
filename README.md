@@ -160,6 +160,13 @@ el flujo de contratación de planes móviles TIGO:
   - Pantallas iniciales con la explicación de la app.
   - Botones de acceso a **login**, **registro** o **catálogo como invitado**.
 
+# Login (TODOS)
+<img width="389" height="785" alt="image" src="https://github.com/user-attachments/assets/742d64d7-f880-4a3a-979d-e98c5594bfad" />
+
+# Registro (CLIENTE)
+<img width="386" height="751" alt="image" src="https://github.com/user-attachments/assets/2d086a2c-6f39-45b2-af32-b92c37a1ca75" />
+
+# Catálogo como invitado (TODOS)
 <img width="396" height="783" alt="image" src="https://github.com/user-attachments/assets/9b2cbebe-14dd-4a0d-9de2-7fef070edf91" />
 
 - **Autenticación de usuarios**
@@ -184,6 +191,12 @@ el flujo de contratación de planes móviles TIGO:
     - **Invitado**: acceso a planes activos sin necesidad de login.
     - **Usuario**: puede contratar un plan y ver sus contrataciones.
 
+# Catalogos (ADMIN/CLIENTE)
+<img width="378" height="784" alt="image" src="https://github.com/user-attachments/assets/71623d68-7227-47e2-83fc-4dcb8cdadbcb" />
+# Detalles de Catalogo(ADMIN/CLIENTE)
+<img width="375" height="779" alt="image" src="https://github.com/user-attachments/assets/c4de8d8b-792f-40a0-a01d-012b5d02ef15" />
+
+
 
 - **Contratación de planes**
   - Tabla `contrataciones` que relaciona `user_id` con un `plan_id`.
@@ -192,6 +205,8 @@ el flujo de contratación de planes móviles TIGO:
  
 <img width="1178" height="352" alt="image" src="https://github.com/user-attachments/assets/95f18d99-feb1-4364-8293-18467a5a8fcb" />
 
+# Contrataciones  (CLIENTE)
+<img width="381" height="792" alt="image" src="https://github.com/user-attachments/assets/3fa64f4c-fe8b-48bf-b59e-0eb402ac0642" />
 
 - **Chat cliente ↔ asesor**
   - Tabla `mensajes_chat`.
