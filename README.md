@@ -1,3 +1,101 @@
+
+
+# 📱 Tigo Conecta (Examen TIGO) – App móvil con Ionic + Supabase
+
+Aplicación móvil híbrida construida con **Ionic + Angular + Capacitor** que simula
+el flujo de contratación de planes móviles TIGO:
+
+- Catálogo de planes para invitados y usuarios registrados.
+- Registro e inicio de sesión.
+- Chat en tiempo real con un asesor.
+- Panel de asesor para gestionar planes y conversaciones.
+- Integración completa con **Supabase** (auth, base de datos, storage y realtime).
+
+> Proyecto pensado para ejecutarse como app web (`ionic serve`) y como app móvil Android
+  mediante **Capacitor**.
+
+---
+
+## 🧩 Funcionalidades principales
+
+- **Onboarding / Landing pública**
+  - Pantallas iniciales con la explicación de la app.
+  - Botones de acceso a **login**, **registro** o **catálogo como invitado**.
+
+# Login (TODOS)
+<img width="389" height="785" alt="image" src="https://github.com/user-attachments/assets/742d64d7-f880-4a3a-979d-e98c5594bfad" />
+
+# Registro (CLIENTE)
+<img width="386" height="751" alt="image" src="https://github.com/user-attachments/assets/2d086a2c-6f39-45b2-af32-b92c37a1ca75" />
+
+# Catálogo como invitado (TODOS)
+<img width="396" height="783" alt="image" src="https://github.com/user-attachments/assets/9b2cbebe-14dd-4a0d-9de2-7fef070edf91" />
+
+- **Autenticación de usuarios**
+  - Registro de usuario con correo y contraseña.
+  - Inicio de sesión con Supabase Auth.
+  - Manejo de rol por defecto: `usuario_registrado`.
+ 
+<img width="473" height="239" alt="image" src="https://github.com/user-attachments/assets/94d1fe48-d0c2-4a8f-b732-b1c54cdb5ab7" />
+
+- **Perfiles de usuario**
+  - Tabla `profiles` vinculada a `auth.users`.
+  - Trigger en Supabase que crea el perfil al registrarse.
+  - Edición de datos básicos (nombre, teléfono, etc.).
+
+<img width="803" height="191" alt="image" src="https://github.com/user-attachments/assets/fa9a45a9-397e-42d7-8285-f62dd54d9f35" />
+
+- **Catálogo de planes móviles**
+  - Tabla `planes_moviles` con:
+    - Nombre de plan, precio, segmento (Básico / Medio / Premium).
+    - Datos, minutos, SMS, redes sociales, etc.
+  - Vista de catálogo:
+    - **Invitado**: acceso a planes activos sin necesidad de login.
+    - **Usuario**: puede contratar un plan y ver sus contrataciones.
+
+# Catalogos (ADMIN/CLIENTE)
+<img width="378" height="784" alt="image" src="https://github.com/user-attachments/assets/71623d68-7227-47e2-83fc-4dcb8cdadbcb" />
+
+# Detalles de Catalogo(ADMIN/CLIENTE)
+<img width="375" height="779" alt="image" src="https://github.com/user-attachments/assets/c4de8d8b-792f-40a0-a01d-012b5d02ef15" />
+
+
+
+- **Contratación de planes**
+  - Tabla `contrataciones` que relaciona `user_id` con un `plan_id`.
+  - Estado del plan (activo / cancelado).
+  - Historial de planes contratados por el usuario.
+ 
+<img width="1178" height="352" alt="image" src="https://github.com/user-attachments/assets/95f18d99-feb1-4364-8293-18467a5a8fcb" />
+
+# Planes Activos(ADMIN)
+<img width="391" height="783" alt="image" src="https://github.com/user-attachments/assets/38254894-8035-4c01-b0c4-a9866cc57490" />
+
+# Contrataciones  (CLIENTE)
+<img width="381" height="792" alt="image" src="https://github.com/user-attachments/assets/3fa64f4c-fe8b-48bf-b59e-0eb402ac0642" />
+
+# Solicitudes de Contratacion (ADMIN)
+<img width="384" height="779" alt="image" src="https://github.com/user-attachments/assets/a104d85b-2041-49a3-a846-16a5163a3364" />
+
+
+- **Chat cliente ↔ asesor**
+  - Tabla `mensajes_chat`.
+  - Chat en tiempo real (Supabase Realtime) entre:
+    - Usuario final.
+    - Asesor comercial.
+  - Diferenciación visual de mensajes del asesor y del usuario.
+ 
+# CHAT (CLIENTE)
+<img width="399" height="788" alt="image" src="https://github.com/user-attachments/assets/ed57a810-8c84-4228-9e6d-cf9dcc7e3ef8" />
+
+# CHAT (ADMIN)
+<img width="377" height="775" alt="image" src="https://github.com/user-attachments/assets/b0201b41-8fb5-4208-b081-609bcb34d079" />
+
+# Perfil editar (ADMIN/CLIENTE)
+
+<img width="383" height="781" alt="image" src="https://github.com/user-attachments/assets/4a68098b-deb3-413c-a86d-11254dee258c" />
+
+
 ## Cómo generar el APK de Android
 
 ### 1. Requisitos previos
@@ -137,103 +235,6 @@ Antes de hacer el `ionic build --prod` revisa que:
   * `supabaseKey` correcta (la **anon** key, NO la service_role).
 
 Si en dev te funciona, normalmente solo es copiar esa config a la versión de producción.
-
-# 📱 Tigo Conecta (Examen TIGO) – App móvil con Ionic + Supabase
-
-Aplicación móvil híbrida construida con **Ionic + Angular + Capacitor** que simula
-el flujo de contratación de planes móviles TIGO:
-
-- Catálogo de planes para invitados y usuarios registrados.
-- Registro e inicio de sesión.
-- Chat en tiempo real con un asesor.
-- Panel de asesor para gestionar planes y conversaciones.
-- Integración completa con **Supabase** (auth, base de datos, storage y realtime).
-
-> Proyecto pensado para ejecutarse como app web (`ionic serve`) y como app móvil Android
-  mediante **Capacitor**.
-
----
-
-## 🧩 Funcionalidades principales
-
-- **Onboarding / Landing pública**
-  - Pantallas iniciales con la explicación de la app.
-  - Botones de acceso a **login**, **registro** o **catálogo como invitado**.
-
-# Login (TODOS)
-<img width="389" height="785" alt="image" src="https://github.com/user-attachments/assets/742d64d7-f880-4a3a-979d-e98c5594bfad" />
-
-# Registro (CLIENTE)
-<img width="386" height="751" alt="image" src="https://github.com/user-attachments/assets/2d086a2c-6f39-45b2-af32-b92c37a1ca75" />
-
-# Catálogo como invitado (TODOS)
-<img width="396" height="783" alt="image" src="https://github.com/user-attachments/assets/9b2cbebe-14dd-4a0d-9de2-7fef070edf91" />
-
-- **Autenticación de usuarios**
-  - Registro de usuario con correo y contraseña.
-  - Inicio de sesión con Supabase Auth.
-  - Manejo de rol por defecto: `usuario_registrado`.
- 
-<img width="473" height="239" alt="image" src="https://github.com/user-attachments/assets/94d1fe48-d0c2-4a8f-b732-b1c54cdb5ab7" />
-
-- **Perfiles de usuario**
-  - Tabla `profiles` vinculada a `auth.users`.
-  - Trigger en Supabase que crea el perfil al registrarse.
-  - Edición de datos básicos (nombre, teléfono, etc.).
-
-<img width="803" height="191" alt="image" src="https://github.com/user-attachments/assets/fa9a45a9-397e-42d7-8285-f62dd54d9f35" />
-
-- **Catálogo de planes móviles**
-  - Tabla `planes_moviles` con:
-    - Nombre de plan, precio, segmento (Básico / Medio / Premium).
-    - Datos, minutos, SMS, redes sociales, etc.
-  - Vista de catálogo:
-    - **Invitado**: acceso a planes activos sin necesidad de login.
-    - **Usuario**: puede contratar un plan y ver sus contrataciones.
-
-# Catalogos (ADMIN/CLIENTE)
-<img width="378" height="784" alt="image" src="https://github.com/user-attachments/assets/71623d68-7227-47e2-83fc-4dcb8cdadbcb" />
-
-# Detalles de Catalogo(ADMIN/CLIENTE)
-<img width="375" height="779" alt="image" src="https://github.com/user-attachments/assets/c4de8d8b-792f-40a0-a01d-012b5d02ef15" />
-
-
-
-- **Contratación de planes**
-  - Tabla `contrataciones` que relaciona `user_id` con un `plan_id`.
-  - Estado del plan (activo / cancelado).
-  - Historial de planes contratados por el usuario.
- 
-<img width="1178" height="352" alt="image" src="https://github.com/user-attachments/assets/95f18d99-feb1-4364-8293-18467a5a8fcb" />
-
-# Planes Activos(ADMIN)
-<img width="391" height="783" alt="image" src="https://github.com/user-attachments/assets/38254894-8035-4c01-b0c4-a9866cc57490" />
-
-# Contrataciones  (CLIENTE)
-<img width="381" height="792" alt="image" src="https://github.com/user-attachments/assets/3fa64f4c-fe8b-48bf-b59e-0eb402ac0642" />
-
-# Solicitudes de Contratacion (ADMIN)
-<img width="384" height="779" alt="image" src="https://github.com/user-attachments/assets/a104d85b-2041-49a3-a846-16a5163a3364" />
-
-
-- **Chat cliente ↔ asesor**
-  - Tabla `mensajes_chat`.
-  - Chat en tiempo real (Supabase Realtime) entre:
-    - Usuario final.
-    - Asesor comercial.
-  - Diferenciación visual de mensajes del asesor y del usuario.
- 
-# CHAT (CLIENTE)
-<img width="399" height="788" alt="image" src="https://github.com/user-attachments/assets/ed57a810-8c84-4228-9e6d-cf9dcc7e3ef8" />
-
-# CHAT (ADMIN)
-<img width="377" height="775" alt="image" src="https://github.com/user-attachments/assets/b0201b41-8fb5-4208-b081-609bcb34d079" />
-
-# Perfil editar (ADMIN/CLIENTE)
-
-<img width="383" height="781" alt="image" src="https://github.com/user-attachments/assets/4a68098b-deb3-413c-a86d-11254dee258c" />
-
-
 ## 🏗️ Tecnologías utilizadas
 
 - **Ionic Framework** (Angular) :contentReference[oaicite:7]{index=7}  
