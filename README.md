@@ -160,15 +160,21 @@ el flujo de contratación de planes móviles TIGO:
   - Pantallas iniciales con la explicación de la app.
   - Botones de acceso a **login**, **registro** o **catálogo como invitado**.
 
+<img width="396" height="783" alt="image" src="https://github.com/user-attachments/assets/9b2cbebe-14dd-4a0d-9de2-7fef070edf91" />
+
 - **Autenticación de usuarios**
   - Registro de usuario con correo y contraseña.
   - Inicio de sesión con Supabase Auth.
   - Manejo de rol por defecto: `usuario_registrado`.
+ 
+<img width="473" height="239" alt="image" src="https://github.com/user-attachments/assets/94d1fe48-d0c2-4a8f-b732-b1c54cdb5ab7" />
 
 - **Perfiles de usuario**
   - Tabla `profiles` vinculada a `auth.users`.
   - Trigger en Supabase que crea el perfil al registrarse.
   - Edición de datos básicos (nombre, teléfono, etc.).
+
+<img width="803" height="191" alt="image" src="https://github.com/user-attachments/assets/fa9a45a9-397e-42d7-8285-f62dd54d9f35" />
 
 - **Catálogo de planes móviles**
   - Tabla `planes_moviles` con:
@@ -178,10 +184,14 @@ el flujo de contratación de planes móviles TIGO:
     - **Invitado**: acceso a planes activos sin necesidad de login.
     - **Usuario**: puede contratar un plan y ver sus contrataciones.
 
+
 - **Contratación de planes**
   - Tabla `contrataciones` que relaciona `user_id` con un `plan_id`.
   - Estado del plan (activo / cancelado).
   - Historial de planes contratados por el usuario.
+ 
+<img width="1178" height="352" alt="image" src="https://github.com/user-attachments/assets/95f18d99-feb1-4364-8293-18467a5a8fcb" />
+
 
 - **Chat cliente ↔ asesor**
   - Tabla `mensajes_chat`.
