@@ -193,6 +193,7 @@ el flujo de contratación de planes móviles TIGO:
 
 # Catalogos (ADMIN/CLIENTE)
 <img width="378" height="784" alt="image" src="https://github.com/user-attachments/assets/71623d68-7227-47e2-83fc-4dcb8cdadbcb" />
+
 # Detalles de Catalogo(ADMIN/CLIENTE)
 <img width="375" height="779" alt="image" src="https://github.com/user-attachments/assets/c4de8d8b-792f-40a0-a01d-012b5d02ef15" />
 
@@ -205,8 +206,15 @@ el flujo de contratación de planes móviles TIGO:
  
 <img width="1178" height="352" alt="image" src="https://github.com/user-attachments/assets/95f18d99-feb1-4364-8293-18467a5a8fcb" />
 
+# Planes Activos(ADMIN)
+<img width="391" height="783" alt="image" src="https://github.com/user-attachments/assets/38254894-8035-4c01-b0c4-a9866cc57490" />
+
 # Contrataciones  (CLIENTE)
 <img width="381" height="792" alt="image" src="https://github.com/user-attachments/assets/3fa64f4c-fe8b-48bf-b59e-0eb402ac0642" />
+
+# Solicitudes de Contratacion (ADMIN)
+<img width="384" height="779" alt="image" src="https://github.com/user-attachments/assets/a104d85b-2041-49a3-a846-16a5163a3364" />
+
 
 - **Chat cliente ↔ asesor**
   - Tabla `mensajes_chat`.
@@ -214,15 +222,17 @@ el flujo de contratación de planes móviles TIGO:
     - Usuario final.
     - Asesor comercial.
   - Diferenciación visual de mensajes del asesor y del usuario.
+ 
+# CHAT (CLIENTE)
+<img width="399" height="788" alt="image" src="https://github.com/user-attachments/assets/ed57a810-8c84-4228-9e6d-cf9dcc7e3ef8" />
 
-- **Panel de asesor**
-  - Secciones típicas (dependiendo de tu código):
-    - Dashboard de resumen.
-    - Editor de planes (`plan-editor`).
-    - Lista de conversaciones con usuarios.
-    - Perfil del asesor.
+# CHAT (ADMIN)
+<img width="377" height="775" alt="image" src="https://github.com/user-attachments/assets/b0201b41-8fb5-4208-b081-609bcb34d079" />
 
----
+# Perfil editar (ADMIN/CLIENTE)
+
+<img width="383" height="781" alt="image" src="https://github.com/user-attachments/assets/4a68098b-deb3-413c-a86d-11254dee258c" />
+
 
 ## 🏗️ Tecnologías utilizadas
 
