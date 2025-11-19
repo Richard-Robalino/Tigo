@@ -30,6 +30,8 @@ el flujo de contratación de planes móviles TIGO:
 
 # Catálogo como invitado (TODOS)
 <img width="396" height="783" alt="image" src="https://github.com/user-attachments/assets/9b2cbebe-14dd-4a0d-9de2-7fef070edf91" />
+<img width="389" height="780" alt="image" src="https://github.com/user-attachments/assets/8d22fb55-d647-4456-892a-9ec64e2f7c9b" />
+
 
 - **Autenticación de usuarios**
   - Registro de usuario con correo y contraseña.
