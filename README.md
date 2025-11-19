@@ -53,6 +53,10 @@ el flujo de contratación de planes móviles TIGO:
     - **Invitado**: acceso a planes activos sin necesidad de login.
     - **Usuario**: puede contratar un plan y ver sus contrataciones.
 
+# Ingresar Nueva Plan (ADMIN)
+<img width="387" height="772" alt="image" src="https://github.com/user-attachments/assets/271dd457-710c-4b40-b1cb-54a0a0d972da" />
+
+
 # Catalogos (ADMIN/CLIENTE)
 <img width="378" height="784" alt="image" src="https://github.com/user-attachments/assets/71623d68-7227-47e2-83fc-4dcb8cdadbcb" />
 
